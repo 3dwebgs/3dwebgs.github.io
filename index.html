@@ -16,19 +16,19 @@
     <link href="stylesheets/dashboard.css" rel="stylesheet">
     
     <script src="javascripts/jquery.min.js"></script>
-
+    <script>
+     $(document).ready(function() {
+        $("#smiley").click(function(event){
+           $('#main').load('../miscWebGLpages/babylon-smiley1.html ');
+        });
+     });
+    </script>
 
   </head>
 
   <body>
     
-    <script>
-     $(document).ready(function() {
-        $("#smiley").click(function(event){
-           $('#main').load('http://webgson.github.io/miscWebGLpages/babylon-smiley1.html');
-        });
-     });
-    </script>
+
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
