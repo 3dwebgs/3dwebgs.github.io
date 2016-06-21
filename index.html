@@ -9,21 +9,21 @@
     <meta name="description" content="Interactive webGL demos">
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
-
     <title>Dashboard Template for Bootstrap</title>
-
     <!-- Bootstrap core CSS -->
     <link href="stylesheets/bootstrap/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="stylesheets/dashboard.css" rel="stylesheet">
+    
+    <script src="javascripts/jquery.min.js"></script>
+    <script>
+     $(document).ready(function() {
+        $("#smiley").click(function(event){
+           $('#main').load('http://webgson.github.io/miscWebGLpages/babylon-smiley1.html');
+        });
+     });
+    </script>
 
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -58,24 +58,24 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
+            <li><a class="sideBarNav"  id="smiley" href="#">Smiley</a></li>
+            <li><a class="sideBarNav" href="#">Analytics</a></li>
+            <li><a class="sideBarNav" href="#">Export</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
+            <li><a class="sideBarNav" href="">Nav item</a></li>
+            <li><a class="sideBarNav" href="">Nav item again</a></li>
+            <li><a class="sideBarNav" href="">One more nav</a></li>
+            <li><a class="sideBarNav" href="">Another nav item</a></li>
+            <li><a class="sideBarNav" href="">More navigation</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
+            <li><a class="sideBarNav" href="">Nav item again</a></li>
+            <li><a class="sideBarNav" href="">One more nav</a></li>
+            <li><a class="sideBarNav" href="">Another nav item</a></li>
           </ul>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="main">
 
 
         </div>
