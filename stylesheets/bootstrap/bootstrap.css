@@ -1065,7 +1065,7 @@ th {
 .glyphicon-menu-up:before {
   content: "\e260";
 }
-*:not(.container-fluid) {
+.navbar-fixed-top {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
