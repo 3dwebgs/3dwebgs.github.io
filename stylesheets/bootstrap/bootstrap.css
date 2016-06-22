@@ -1070,12 +1070,12 @@ th {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.navbar-fixed-top:before,
+/*.navbar-fixed-top:before,
 .navbar-fixed-top:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-}
+}*/
 html {
   font-size: 10px;
 
