@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Customsitetemplate by gson78</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/dashboard.css">
+    <link rel="stylesheet" href="stylesheets/dropit.css">
+    <script src="https://use.fontawesome.com/45ad6360f7.js"></script>
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/dropit.js"></script>
+  </head>
+  <body>
+
+    <nav class="menu">
+      <ul>
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Contact</li></a>
+      </ul>
+    </nav>
+    <div class="header">
+      <div class="logo">Logo</div>
+      <div class="toggle"> <a href="#"><i class="fa fa-bars"></i></a></div>
+    </div> <!--header-->
+  
+    
+    <div class="page">
+      <div class="styled-select">
+        <select name="options" ONCHANGE="document.getElementById('main-iframe').src = this.options[this.selectedIndex].value">
+          <option value="http://3dwebgs.github.io/miscWebGLpages/babylon-smiley1.html">Smiley</option>
+          <option value="http://3dwebgs.github.io/miscWebGLpages/racquetball3.html">Racquetball</option>
+          <option value="http://3dwebgs.github.io/miscWebGLpages/resistanceisfutileyo.html">Borg Ship</option>
+        </select>
+      </div>
+      <div class="main">
+          <iframe id="main-iframe" name="main-iframe"></iframe>
+      </div><!--main-->
+      
+    </div><!--page-->
+    
+    <script src="javascripts/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+    	  $(".toggle").click(function(){
+    	    $(".menu").slideToggle(700);
+    	  });
+    	});
+
+    </script>
+  
+  </body>
+</html>
