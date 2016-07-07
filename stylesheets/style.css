@@ -1,54 +1,99 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Customsitetemplate by gson78</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="stylesheets/dashboard.css">
-    <link rel="stylesheet" href="stylesheets/dropit.css">
-    <script src="https://use.fontawesome.com/45ad6360f7.js"></script>
-    <script src="javascripts/jquery.min.js"></script>
-    <script src="javascripts/dropit.js"></script>
-  </head>
-  <body>
+/*fix dropdown in media queries...line up in top line*/
+/*fix default iframe src when page loads*/
+/*start on about page*/
+/*logo* in blender*/
 
-    <nav class="menu">
-      <ul>
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Contact</li></a>
-      </ul>
-    </nav>
-    <div class="header">
-      <div class="logo">Logo</div>
-      <div class="toggle"> <a href="#"><i class="fa fa-bars"></i></a></div>
-    </div> <!--header-->
-  
-    
-    <div class="page">
-      <div class="styled-select">
-        <select name="options" ONCHANGE="document.getElementById('main-iframe').src = this.options[this.selectedIndex].value">
-          <option value="http://3dwebgs.github.io/miscWebGLpages/babylon-smiley1.html">Smiley</option>
-          <option value="http://3dwebgs.github.io/miscWebGLpages/racquetball3.html">Racquetball</option>
-          <option value="http://3dwebgs.github.io/miscWebGLpages/resistanceisfutileyo.html">Borg Ship</option>
-        </select>
-      </div>
-      <div class="main">
-          <iframe id="main-iframe" name="main-iframe"></iframe>
-      </div><!--main-->
-      
-    </div><!--page-->
-    
-    <script src="javascripts/jquery.min.js"></script>
-    <script>
-    	$(document).ready(function(){
-    	  $(".toggle").click(function(){
-    	    $(".menu").slideToggle(700);
-    	  });
-    	});
+.header{
+	margin: 5px 5px -38px 5px;
+	height: 3vh;
+}
 
-    </script>
-  
-  </body>
-</html>
+
+/*menu*/
+
+.logo{
+	float: left;
+	margin-right: -40px;
+}
+
+.toggle {
+	width: 100%;
+	text-align: right;
+}
+
+.menu {
+	  background: #1abc9c;
+	  display: none;
+	  width: 100%;
+}
+.menu ul {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	  text-align: center;
+}
+.menu ul li {
+	  color: #fff;
+	  font-size: 12px;
+	  letter-spacing: 2px;
+	  padding: 15px 0;
+	  text-transform: uppercase;
+}
+.menu ul li:hover { background: #16a085; }
+.menu a {
+	  text-decoration: none;
+	  color: #fff;
+}
+
+
+.page{
+	display:flex;
+	flex-direction: column;
+	height: 94vh;
+	width: 98vw;
+	position: absolute;
+	z-index: 2;
+}
+
+.styled-select {
+	margin: 10px auto 10px auto;
+	width: 240px;
+	height: 34px;
+	overflow: hidden;
+	background: url("../images/down_arrow_select.jpg") no-repeat right #ddd;
+	border: 1px solid #ccc;
+}
+
+.styled-select select {
+	background: transparent;
+	width: 268px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1;
+	border: 0;
+	border-radius: 0;
+	height: 34px;
+	-webkit-appearance: none;
+ }
+
+.main{
+	height:100%;
+	width: 100%;
+}
+
+#main-iframe{
+	height:100%;
+	width: 100%;
+}
+
+@media (min-width: 1000px) {
+
+
+
+}
+
+@media (min-width: 250px) {
+	
+
+}
+
