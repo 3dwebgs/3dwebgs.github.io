@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="stylesheets/top-nav.css">
     <script src="https://use.fontawesome.com/45ad6360f7.js"></script>
     <script src="javascripts/jquery.min.js"></script>
+    
+
   </head>
   <body>
 
@@ -15,32 +17,39 @@
     <div class="header">
       <div class="logo"> <img src="images/3dwebgs10.png"> </div>
         <div class="styled-select">
-          <select name="options" ONCHANGE="document.getElementById('main-iframe').src = this.options[this.selectedIndex].value">
-            <option value="http://3dwebgs.github.io/miscWebGLpages/babylon-smiley1.html">Smiley</option>
-            <option value="http://3dwebgs.github.io/miscWebGLpages/racquetball3.html">Racquetball</option>
-            <option value="http://3dwebgs.github.io/miscWebGLpages/resistanceisfutileyo.html">Borg Ship</option>
+          <select id="select-frame" name="options">       
+            <option id="option1" value="http://3dwebgs.github.io/miscWebGLpages/dragndropsmiley.html" selected>Smiley</option>
+            <option id="option2" value="http://3dwebgs.github.io/miscWebGLpages/racquetball3.html">Racquetball</option>
+            <option id="option3" value="http://3dwebgs.github.io/miscWebGLpages/resistanceisfutileyo.html">Borg Ship</option>
           </select>
         </div>
     </div> <!--header-->
-  
+  <!--ONCHANGE="document.getElementById('main-iframe').src = this.options[this.selectedIndex].value"-->
+
     
     <div class="page">
 
       <div class="main">
-          <iframe id="main-iframe" name="main-iframe"></iframe>
+          <iframe id="main-iframe"></iframe>
       </div><!--main-->
       
     </div><!--page-->
     
     <script src="javascripts/jquery.min.js"></script>
+    
     <script>
-    	$(document).ready(function(){
-    	  $(".toggle").click(function(){
-    	    $(".menu").slideToggle(700);
-    	  });
-    	});
-
+    var mainIframe = document.getElementById("main-iframe");
+    var link = document.getElementById("option1").value;
+    mainIframe.src = link;
+    
+    //write an onchange: must grab selected options value
+    document.getElementById("select-frame").addEventListener("change", updateIframe)
+    
+    function updateIframe() {
+      var link = document.getElementById("select-frame").value;
+      mainIframe.src = link;
+    }
     </script>
-  
+
   </body>
 </html>
