@@ -1,9 +1,10 @@
 body{
 	margin: 0px;
+	background-color: black;
 }
 
 .header{
-	margin: 5px 5px -38px 5px;
+	margin: 5px;
 	height: 3vh;
 	position: relative;
 	z-index: 2;
@@ -39,10 +40,11 @@ body{
  }
 
 .page{
-	height: 100vh;
-	width: 100vw;
+	height: 90vh;
+	width: 90vw;
 	position: relative;
 	z-index: 1;
+	margin: auto;
 }
 
 
@@ -55,6 +57,7 @@ body{
 #main-iframe{
 	height:100%;
 	width: 100%;
+	border: none;
 }
 
 @media (max-width: 400px) {
