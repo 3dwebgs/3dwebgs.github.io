@@ -16,7 +16,8 @@ body{
 /*menu*/
 
 .logo>img{
-	height: 10vh;
+	height: 20vh;
+	opacity: 0.65
 }
 
 .styled-select {
