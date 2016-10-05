@@ -21,7 +21,7 @@ body{
 }
 
 .styled-select {
-	width: 240px;
+	width: 150px;
 	height: 34px;
 	overflow: hidden;
 	background: url("../images/down_arrow_select.jpg") no-repeat right #ddd;
@@ -30,7 +30,7 @@ body{
 
 .styled-select select {
 	background: transparent;
-	width: 268px;
+	width: 168px;
 	padding: 5px;
 	font-size: 16px;
 	line-height: 1;
