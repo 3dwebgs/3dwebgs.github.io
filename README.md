@@ -1,2 +1,2 @@
-http://3dwebgs.github.io/miscWebGLpages.com
+http://3dwebgs.github.io/miscWebGLpages
 
